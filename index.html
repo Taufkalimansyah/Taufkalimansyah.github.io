@@ -1,0 +1,107 @@
+<html>
+<title>TUGAS 15</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w2.css">
+	
+<body>
+	<style> 
+		body {
+		  background-color: rgb(37, 36, 34);
+		}
+		</style>
+	
+<center>
+<div class="w3-container">
+<img src="banner.jpg" width="100%" height="40%">
+</div>
+<div class="w3-bar w3-white">
+ <button class="w3-bar-item w3-button" onclick="openKota('Atas')">DOTS</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Bawah')">Marvels</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Kiri')">Thor</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Kanan')">Vicenzo</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Mendekat')">Blackpanther</button>
+ <div class="w3-dropdown-hover">
+	<button class="w3-button">CINEMA INDONESIA</button>
+	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+		<button class="w3-bar-item w3-button" onclick="openKota('Kegelapan')">GALAKSI</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Menghilang')">ANTARES</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Putar')">TOPIK THE FIRST AVANGER</button>
+	</div>
+ </div>
+ <button class="w3-bar-item w3-button" onclick="openKota('Samping')">ABOUT ME</button>
+ </div>
+<div id="Atas" class="w3-container kota w3-animate-top" style="display:none">
+	<font color="white"> <h2>Descendats Of The Sun</h2>
+ DOTS
+ <br>
+ <p></p>
+ <img src="DOTS.jpg" width="300">
+ </div>
+<div id="Bawah" class="w3-container kota w3-animate-bottom" style="display:none">
+ <h2>The Marvels</h2>
+ Marvels
+ <br>
+ <p></p>
+ <img src="The Marvels.jpeg" width="500">
+ </div>
+<div id="Kiri" class="w3-container kota w3-animate-left" style="display:none">
+ <h2>Thor</h2>
+ Thor Love and Thunder
+ <br>
+ <p></p>
+ <img src="Thor.jpeg" width="500">
+</div>
+<div id="Kanan" class="w3-container kota w3-animate-right" style="display:none">
+ <h2>Vicenzo </h2>
+ Viceno Cassano
+ <br>
+ <p></p>
+ <img src="Vicenzo.png" width="500">
+</div>
+<div id="Mendekat" class="w3-container kota w3-animate-zoom" style="display:none">
+ <h2>Black Panther</h2>
+WAKANDA FOREVER
+ <br>
+ <p></p>
+ <img src="blackpanther.jpeg" width="500">
+</div>
+<div id="Kegelapan" class="w3-container kota w3-animate-fading" style="display:none">
+ <h2>Galaksi</h2>
+ <br>
+ <p></p>
+ <img src="Galaksi.jpg" width="500">
+</div>
+<div id="Menghilang" class="w3-container kota w3-animate-opacity" style="display:none">
+ <h2>Antares</h2>
+ <br>
+ <p></p>
+ <img src="Antares.jpeg" width="500">
+</div>
+<div id="Putar" class="w3-container kota w3-spin" style="display:none">
+ <h2>opik1990</h2>
+ <br>
+ <p></p>
+ <img src="opik1990.jpg" width="500">
+</div>
+<div id="Samping" class="w3-container kota w3-animate-top" style="display:none">
+	<font color="white"> <h2>ABOUT ME</h2>
+SAYA TAUFIK ALIMANSYAH DARI KOTA MAJALENGKA LAHIR PADA TANGGAL 19 JANUARI 2005. 
+ <br>
+ <p></p>
+ <img src="Mi.jpg" width="300">
+ <p>TAUFIK ALIMANSYAH</p>
+ <p>10123126</p>
+ <p>INFORMATIKA-3</p>
+ </div>
+<script>
+function openKota(namakota) {
+ var i; 
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namakota).style.display = "block"; 
+}
+</script>
+</body>
+</html
